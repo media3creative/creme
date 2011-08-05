@@ -1,6 +1,6 @@
 var whichPic = 1;
 var currentPage = "#page2"
-var currentSubPage = "#page1-sub1"
+var currentSubPage = "#page1-sub1-page"
 var bg_1_pic = "bg1.jpg"
 var bg_2_pic = "bg1.jpg"
 var agent=navigator.userAgent.toLowerCase();
@@ -11,9 +11,10 @@ var is_safari = ((agent.indexOf('safari') != -1));
 $(document).ready(function() {
 	document.body.style.display = 'block';
 
-	$("#page1-sub2").fadeToggle();
-	$("#page1-sub3").fadeToggle();
-	$("#page1-sub4").fadeToggle();
+	$(".content-type-1").fadeToggle();
+	$("#page1-sub1-page").fadeToggle();
+
+
 	changePage("#page1")
 	$(".bg2").css("display", "none");
 	$("body").css("overflow-x", "hidden");
@@ -55,7 +56,7 @@ $(document).ready(function() {
 	  }
 	);
 	//=====MOUSE ENTER MENU ITEM==============
-	$('#sub-1-link,#sub-2-link,#sub-3-link,#sub-4-link,#sub-5-link').hover(
+	$('%ul.submenu li').hover(
 	  function () {
 		//alert("tutu")
 	    	$(this).animate(
@@ -74,26 +75,12 @@ $(document).ready(function() {
 						);
 	  }
 	);
-	$('#sub-1-link').click(
+	$('%ul.submenu li').click(
 	  function () {
-			toggleSubPage('#page1-sub1')
+			toggleSubPage(this)
 	  }
 	);
-	$('#sub-2-link').click(
-	  function () {
-			toggleSubPage('#page1-sub2')
-	  }
-	);
-	$('#sub-3-link').click(
-	  function () {
-			toggleSubPage('#page1-sub3')
-	  }
-	);
-	$('#sub-4-link').click(
-	  function () {
-			toggleSubPage('#page1-sub4')
-	  }
-	);
+
 	$('#main-1-link').click(function(){
 		changePage("#page1");
 		switchBg("bg1.jpg");
@@ -126,17 +113,18 @@ $(document).ready(function() {
 	});
 	$('#main-6-link').click(function(){
 		changePage("#page6");
-		switchBg("contact_bg.jpg");
+		switchBg("bg1.jpg");
 		// pageComeOut();
 	});
 	setInterval(slideShow,9000);
 
 });
 function toggleSubPage(input){
-	if($(input).css("display") == "none"){
-		$(input).fadeToggle();
+	var target = "#"+ $(input).attr("id") + "-page"
+	if($(target).css("display") == "none"){
+		$(target).fadeToggle();
 		$(currentSubPage).fadeToggle();
-		currentSubPage = input
+		currentSubPage = target
 	}
 }
 function ipadFunc(){

@@ -5,16 +5,16 @@
 %html{html_attrs}
   %head
     %title= @title
-    // Buggy on the iPhone4
-    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
     %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "stylesheets/lightbox.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
-    //%script{:type => "text/javascript", :src => "javascripts/respond.min.js"}
-    //%script{:type => "text/javascript", :src => "javascripts/application.js"}
     %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
     %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    / BEGIN FOXYCART FILES
+    %link{:charset => "utf-8", :href => "http://static.foxycart.com/scripts/colorbox/1.3.16/style1_fc/colorbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %script{:charset => "utf-8", :src => "http://cdn.foxycart.com/creme/foxycart.complete.3.js", :type => "text/javascript"}
+    / END FOXYCART FILES
+
   %body{:onorientationchange =>"ipadFunc();"}
   .bg2
   .bg1
@@ -35,39 +35,37 @@
         %a{:href => "#", :id => "main-4-link"} GALLERY
         .menu-hl
       %li
-        %a{:href => "#", :id => "main-4-link"} WHOLESALE
+        %a{:href => "#", :id => "main-5-link"} SUPPORTS
         .menu-hl
       %li
-        %a{:href => "#", :id => "main-5-link"} CONTACT
+        %a{:href => "#", :id => "main-6-link"} CONTACT
         .menu-hl
   .content-container#page1
     #page-1-content-bg
     #page-1-content
       .page-title About
       %ul.submenu
-        %li.white#sub-1-link
+        %li.white#page1-sub1
           %a{:href => "#"} our Identity
-        %li.red#sub-2-link 
+        %li.red#page1-sub2
           %a{:href => "#"} our Customers
-        %li.pink#sub-3-link
+        %li.pink#page1-sub3
           %a{:href => "#"} our Mission
-      .content-type-1#page1-sub1
+      .content-type-1#page1-sub1-page
         .content-type-1-part-1
           %h1 Who we are
           %h2 Dedicated to beauty
           %p Creme de-la Creme Hair is an upscale hair boutique that was established to offer only the very best in exotic human hair extensions to customers around the world that want and deserve the very best hair that money can buy. We import the most lustrous, pure, 100% cuticle, virgin remy hair directly from India, Brazil, Malaysia and Europe for re-sell in the United States.
           %p Creme de la Creme Hair has gained a reputation for a superior product and when you use our hair you will immediately recognize the difference. So rest assured that when you make a purchase from Creme de la Creme Hair you are getting the best hair that money can buy. For the most elite hair on the market… Creme de la Creme Hair!
         .content-type-1-part-2
-          %br
-          %br
-          %br
-          %br
+          //%a{:href => "https://creme.foxycart.com/cart?name=Cool%20Example&price=10&color=red"} Add a red Cool Example
+
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
             | $1800
-      .content-type-1#page1-sub2
+      .content-type-1#page1-sub2-page
         .content-type-1-part-1
           %h1 our Customers
           %h2 is our priority
@@ -80,9 +78,9 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
             | $1800
-      .content-type-1#page1-sub3
+      .content-type-1#page1-sub3-page
         .content-type-1-part-1
           %h1 our Missions
           %h2 it is all about you
@@ -95,31 +93,52 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
             | $1800
   .content-container#page2
     #page-2-content
       .page-title our Products
       %ul.submenu
-        %li.white#sub-1-link
+        %li.white#page2-sub1
           %a{:href => "#"} Indian
-        %li.red#sub-2-link 
+        %li.red#page2-sub2
           %a{:href => "#"} Brazilian
-        %li.pink#sub-3-link
+        %li.pink#page2-sub3
           %a{:href => "#"} Malysian
-        %li.brown#sub-4-link
+        %li.brown#page2-sub4
           %a{:href => "#"} Bohemian
-        %li.yellow#sub-5-link
+        %li.yellow#page2-sub5
           %a{:href => "#"} European
-      .content-type-1#page2-sub1
+      .content-type-1#page2-sub1-page
         .content-type-1-part-1
-          %h1 Shampoo
-          %h2 July 21st, 2011
-          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
-          %h2 July 21st, 2011
-          %p Corporate design (logos, uniforms)
-          %p Corporate communications (advertisements, public relations, information, commercials)
-          %p Corporate behavior (internal values, norms)
+          %h1 Indian Hair
+          %h2 Sassy Straight
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %h2 Wild 'n' Wavy
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %h2 Crazy Curly
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
+          %a{:href => "#"}
+            %image{:width => "50px", :height => "70px", :src => "/images/pic/thumb_sample.jpg"}
         .content-type-1-part-2
           %br
           %br
@@ -128,14 +147,81 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
+            | $1800
+      .content-type-1#page2-sub2-page
+        .content-type-1-part-1
+          %h1 Brazilian Hair
+          %h2 Sleek & Straight
+          %h2 Bodacious Bodywave
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page2-sub3-page
+        .content-type-1-part-1
+          %h1 Malaysian Hair
+          %h2 Silky Straight
+          %h2 Water Wave
+          %h2 Candy Curly
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page2-sub4-page
+        .content-type-1-part-1
+          %h1 Bohemian Hair
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page2-sub5-page
+        .content-type-1-part-1
+          %h1 European Hair
+          %h2 European Hair
+          %h2 Russian Hair
+          %h2 I-Tip Hair
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
             | $1800
   .content-container#page3
     #page-3-content
       .page-title Services
-      .content-type-1#page3-sub1
+      %ul.submenu
+        %li.white#page3-sub1
+          %a{:href => "#"} Hair Services
+        %li.red#page3-sub2
+          %a{:href => "#"} Our Stylists
+        %li.pink#page3-sub3
+          %a{:href => "#"} Make Up
+      .content-type-1#page3-sub1-page
         .content-type-1-part-1
-          %h1 Make over
+          %h1 Hair Services
           %h2 July 21st, 2011
           %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
           %h2 July 21st, 2011
@@ -150,22 +236,60 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
             | $1800
+      .content-type-1#page3-sub2-page
+        .content-type-1-part-1
+          %h1 Our Stylists
+          %h2 July 21st, 2011
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 July 21st, 2011
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page3-sub3-page
+        .content-type-1-part-1
+          %h1 Make Up Services
+          %h2 July 21st, 2011
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 July 21st, 2011
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+
   .content-container#page4
     #page-4-content
+      .page-title Services
       %ul.submenu
-        %li.white#sub-1-link
-          %a{:href => "#"} Our Models
-        %li.red#sub-2-link 
-          %a{:href => "#"} Styles
-        %li.pink#sub-3-link
-          %a{:href => "#"} Visions
-      .content-type-1#page1-sub1
+        %li.white#page4-sub1
+          %a{:href => "#"} Fall 2010
+        %li.red#page4-sub2
+          %a{:href => "#"} Spring 2011
+        %li.pink#page4-sub3
+          %a{:href => "#"} Happy Customers
+      .content-type-1#page4-sub1-page
         .content-type-1-part-1
-          %h1 our Models
-          %h2 July 21st, 2011
-          %img{:height => "219", :width => "467", :src => "/images/gallery_content.png"}
+          %h1 Fall 2010
         .content-type-1-part-2
           %br
           %br
@@ -177,15 +301,54 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
+            | $1800
+      .content-type-1#page4-sub2-page
+        .content-type-1-part-1
+          %h1 Spring 2010
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page4-sub3-page
+        .content-type-1-part-1
+          %h1 Happy Customers
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
             | $1800
   .content-container#page5
     #page-5-content-bg
     #page-5-content
-      .page-title Contacts
-      .content-type-1#page5-sub1
+      .page-title Support
+      %ul.submenu
+        %li.white#page5-sub1
+          %a{:href => "#"} F.A.Q
+        %li.red#page5-sub2
+          %a{:href => "#"} Hair Extension
+        %li.pink#page5-sub3
+          %a{:href => "#"} Hair Maintance
+      .content-type-1#page5-sub1-page
         .content-type-1-part-1
-          %h1 Info
+          %h1 Frequently Asked Questions
           %h2 Mailing
           %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
           %h2 Maps
@@ -200,12 +363,116 @@
           %p.note
             %b corporate
             identity 
-            %b blue 
+            %b pink 
             | $1800
+      .content-type-1#page5-sub2-page
+        .content-type-1-part-1
+          %h1 Hair Extension Tips
+          %h2 Mailing
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 Maps
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page5-sub3-page
+        .content-type-1-part-1
+          %h1 Hair Maintance
+          %h2 Mailing
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 Maps
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+            
   .content-container#page6
-    .content-text#page-6-content
+    #page-6-content-bg
+    #page-6-content
+      .page-title Contact
+      %ul.submenu
+        %li.white#page6-sub1
+          %a{:href => "#"} Contact
+        %li.red#page6-sub2
+          %a{:href => "#"} Handling Policy
+        %li.pink#page6-sub3
+          %a{:href => "#"} Exchange Policy
+      .content-type-1#page6-sub1-page
+        .content-type-1-part-1
+          %h2 Address
+          %p 5959 Richmond Suite 210 Houston, Texas 77057
+          %h2 Emails
+          %p Questions & Inquiries: info@cremedelacremehair.net
+          %p Submit Testimonials & Photos: joi@crememdelacremehair.net
+          %p Submitted photos will become property of Crème de la Crème Hair Company and may be displayed on the website.
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page6-sub2-page
+        .content-type-1-part-1
+          %h1 Shipping and Handling Policy
+          %h2 Mailing
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 Maps
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
+      .content-type-1#page6-sub3-page
+        .content-type-1-part-1
+          %h1 Exchange Policy
+          %h2 Mailing
+          %p Corporate identity has become an important tool for the promotion of corporate culture and companies. It is considered to be composed of the following parts:
+          %h2 Maps
+          %p Corporate design (logos, uniforms)
+          %p Corporate communications (advertisements, public relations, information, commercials)
+          %p Corporate behavior (internal values, norms)
+        .content-type-1-part-2
+          %br
+          %br
+          %br
+          %br
+          %p.note
+            %b corporate
+            identity 
+            %b pink 
+            | $1800
   .upper-footer
-    All contents &copy; copyright 2010 - 2011  Stylitza Designs, Inc. All rights reserved     |    Terms & conditions    |    Privacy policy    |    Terms of use     
+    All contents &copy; copyright 2010 - 2011  Creme da Creme. All rights reserved     |    Terms & conditions    |    Privacy policy    |    Terms of use     
   .footer
     .footer-right
       %form#form1{:action => "", :method => "post", :name => "form1"}

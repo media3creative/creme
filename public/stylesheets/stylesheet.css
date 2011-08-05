@@ -239,9 +239,20 @@ ul.menu a:hover {
 }
 
 #page-6-content {
-  margin-top: 15%;
-  margin-left: 0%;
-  width: 500px;
+  z-index: 100;
+  position: absolute;
+  bottom: 50px;
+  width: 960px;
+  height: 400px;
+}
+
+#page-6-content-bg {
+  z-index: -1;
+  position: absolute;
+  bottom: 50px;
+  width: 960px;
+  height: 500px;
+  background-image: url(/images/text_bg.png);
 }
 
 .menu-hl {
