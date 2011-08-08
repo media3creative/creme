@@ -35,12 +35,12 @@
 .logo
 	z-index: 11
 	background-image: url(/images/logo.png)
-	position: relative
+	position: fixed
 	float: left
 	margin-left: 20px
-	margin-top: -20px
-	width: 326px
-	height: 100px
+	margin-top: 10px
+	width: 250px
+	height: 70px
 html
 
 a
@@ -50,28 +50,35 @@ body
 	background-color: #000000
 	overflow: hidden
 	display: none
+	overflow: scroll
+	
 ul.menu
 	margin-top: 20px
 	padding-left: 0px
 	list-style-type: none
 li
-	display: inline-block
+	font-size: 12px
+	margin-left: 60px
+	//display: inline-block
 //#main-3-link
 //	letter-spacing: 0.15em
 //	margin-top: 10px
+ul.menu li
+	display: inline-block
+	margin: 0px
 ul.menu a 
 	color: #EF6AA1
 	text-shadow: 0px 1px 1px black
 	display: block
-	width: 100px
+	width: 80px
 	height: 25px
 	//background-color: #000000
 	font-family: "Helvetica"
 	font-size: 11px
-	letter-spacing: 0.3em
+	letter-spacing: 0.2em
 	text-decoration: none
 	//line-height: 5em
-	margin-top: 40px
+	margin-top: 10px
 	//margin-right: 45px
 ul.menu a:hover 
 	color: black
@@ -90,7 +97,7 @@ ul.menu a:hover
 	padding-right: 20px
 	padding-left: 20px
 	position: fixed
-	bottom: 40px
+	bottom: 0px
 	right: 0px
 	height: 20px
 	width: 750px
@@ -142,91 +149,21 @@ ul.menu a:hover
 	//background-color: #000000
 	//background-image: url(/images/bg2.jpg)
 	//opacity: 0.3
-#page-1-content
+#page-1-content, #page-2-content, #page-3-content, #page-4-content, #page-5-content, #page-6-content, #page-7-content, #page-8-content
 	z-index: 100
-	position: absolute
-	bottom: 100px
+	position: relative
+	float: left
+	margin-top: 300px
 	width: 960px
-	height: 400px
-#page-1-content-bg
+	height: auto
+#page-1-content-bg, #page-2-content-bg, #page-3-content-bg, #page-4-content-bg, #page-5-content-bg, #page-6-content-bg, #page-7-content-bg, #page-8-content-bg
 	z-index: -1
 	position: absolute
 	bottom: 100px
 	//background-color: #000000
 	width: 960px
 	height: 500px
-	background-image: url(/images/text_bg.png)
-#page-2-content
-	z-index: 100
-	position: absolute
-	bottom: 100px
-	width: 960px
-	height: 400px
-#page-2-content-bg
-	z-index: -1
-	position: absolute
-	bottom: 100px
-	//background-color: #000000
-	width: 960px
-	height: 500px
-	background-image: url(/images/text_bg.png)
-
-#page-3-content
-	z-index: 100
-	position: absolute
-	bottom: 50px
-	width: 960px
-	height: 400px
-#page-3-content-bg
-	z-index: -1
-	position: absolute
-	bottom: 50px
-	//background-color: #000000
-	width: 960px
-	height: 500px
-	background-image: url(/images/text_bg.png)
-#page-4-content
-	z-index: 100
-	position: absolute
-	bottom: 100px
-	width: 960px
-	height: 400px
-#page-4-content-bg
-	z-index: -1
-	position: absolute
-	bottom: 100px
-	//background-color: #000000
-	width: 960px
-	height: 500px
-	background-image: url(/images/text_bg.png)
-#page-5-content
-	z-index: 100
-	position: absolute
-	bottom: 50px
-	width: 960px
-	height: 400px
-#page-5-content-bg
-	z-index: -1
-	position: absolute
-	bottom: 50px
-	//background-color: #000000
-	width: 960px
-	height: 500px
-	background-image: url(/images/text_bg.png)
-#page-6-content
-	z-index: 100
-	position: absolute
-	bottom: 50px
-	width: 960px
-	height: 400px
-#page-6-content-bg
-	z-index: -1
-	position: absolute
-	bottom: 50px
-	//background-color: #000000
-	width: 960px
-	height: 500px
-	background-image: url(/images/text_bg.png)
+	//background-image: url(/images/text_bg.png)
 
 .menu-hl
 	margin-left: 0px
@@ -234,7 +171,7 @@ ul.menu a:hover
 	z-index: -1
 	position: fixed
 	height: 140px
-	width: 100px
+	width: 80px
 	background: rgba(0, 0, 0, 0)
 	border-bottom-right-radius: 40px
 	border-bottom-left-radius: 40px
@@ -242,13 +179,12 @@ ul.menu a:hover
 
 .menu-container
 	z-index: 5
-	position: relative
+	position: fixed
 	text-align: center
-	margin-top: 35px
-	margin-left: auto
-	margin-right: auto
-	height: 137px
-	width: 900px
+	margin-left: 25%
+	top: 35px
+	height: 117px
+	width: 800px
 	background-image: url(/images/header_banner.png)
 	//background-color: #000000
 	//opacity: 0.7
@@ -284,7 +220,7 @@ ul.submenu
 	color: white
 
 ul.submenu li
-	display: inline block
+	display: inline-block
 	overflow: hidden
 	padding-top: 7px
 	margin-left: -30px
@@ -296,7 +232,7 @@ ul.submenu li
 
 
 ul.submenu li a
-	display: inline block
+	display: inline-block
 	width: 155px
 ul.submenu li a:hover
 	//text-decoration: underline
@@ -304,27 +240,28 @@ ul.submenu li a:hover
 	//background-color: #000000
 	font-family: "Verdana"
 	width: 1000px
-	height: 400px
-	margin-left: 50px
+	height: auto
+	margin-left: 0px
 .content-type-1-part-1
 	//background-color: #696969
 	float: left
 	width: 600px
 	//height: 400px
+	//background: rgba(255,255,255,0.5)
 	border-right:  1px solid #EF6AA1
 .content-type-1-part-2
 	//background-color: #333333
 	float: left
 	width: 348px
-	height: 400px
+	height: auto
 .note
 	font-size: 13px	
 	margin-left: 0px
 	padding: 10px
 	width: 300px
 	background-color: #EF6AA1
-	border-bottom-left-radius: 20px
-	border-top-left-radius: 20px
+	border-bottom-right-radius: 20px
+	border-top-right-radius: 20px
 .brown
 	background-color: #492114
 	z-index: 1
@@ -349,14 +286,19 @@ ul.submenu li a:hover
 	background-color: #EF6AA1
 	color: black	
 p
-	font-size: 11px
+	font-size: 12px
 	margin-right: 20px
 	color: white
+	margin-top: 10px
+	margin-left: 50px
 h1
 	color: #EF6AA1
 	font-family: "Verdana"
 	font-size: 24px
+	margin-left: 50px
 h2
-	font-size: 11px
+	margin-top: 20px
+	margin-left: 50px
+	font-size: 13px
 	font-style: oblique
-	color: white
+	color: #EF6AA1

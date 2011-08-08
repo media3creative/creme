@@ -24,28 +24,20 @@ $(document).ready(function() {
 		$(".menu-hl").css("margin-left","-10px");
 	}
 	//=====MOUSE ENTER MENU ITEM==============
-	$('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link').mouseenter(
+	$('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link').mouseenter(
 	  function () {
 		//alert($(this).attr("id") != '#main-6-link');
-		if($(this).attr("id") != 'main-7-link'){
 				$(this).next().animate(
 					{"margin-top":"-80px","background-color":"#EF6AA1","opacity":"0.9"},
 					{duration: 250
 					,ease: "swing"
 					,queue: false}
 				);
-			}else{
-					$(this).next().animate(
-						{"margin-top":"-45px"},
-						{duration: 450
-						,ease: "swing"
-						,queue: false}
-					);
-			}
+		
 	  }
 	);
 	//=====MOUSE LEAVE MENU ITEM==============
-	$('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link').mouseleave(
+	$('#main-1-link,#main-2-link,#main-3-link,#main-4-link,#main-5-link,#main-6-link,#main-7-link,#main-8-link').mouseleave(
 	  function () {
 				$(this).next().animate(
 					{"margin-top":"-200px", "background-color":"black", "opacity":"0"},
@@ -84,46 +76,59 @@ $(document).ready(function() {
 	$('#main-1-link').click(function(){
 		changePage("#page1");
 		switchBg("bg1.jpg");
-		$("p,h2").removeClass("black-text");
+		$("p").removeClass("black-text");
 	});
 	
 	$('#main-2-link').click(function(){
 		changePage("#page2");
 		switchBg("bg3.jpg");
-		$("p,h2").addClass("black-text");
+		$("p").addClass("black-text");
 		// pageComeOut();
 	});
 	$('#main-3-link').click(function(){
 		changePage("#page3");
 		switchBg("bg4.jpg");
-		$("p,h2").addClass("black-text");
+		$("p").addClass("black-text");
 		// pageComeOut();
 	});
 	$('#main-4-link').click(function(){
 		changePage("#page4");
 		switchBg("bg5.jpg");
-		$("p,h2").addClass("black-text");
+		$("p").addClass("black-text");
 		// pageComeOut();
 	});
 	$('#main-5-link').click(function(){
 		changePage("#page5");
 		switchBg("bg2.jpg");
-		$("p,h2").removeClass("black-text");
+		$("p").removeClass("black-text");
 		// pageComeOut();
 	});
 	$('#main-6-link').click(function(){
 		changePage("#page6");
-		switchBg("bg1.jpg");
+		switchBg("bg6.jpg");
+		$("p").addClass("black-text");
 		// pageComeOut();
 	});
-	setInterval(slideShow,9000);
+	$('#main-7-link').click(function(){
+		changePage("#page7");
+		switchBg("bg2.jpg");
+		$("p").removeClass("black-text");
+		// pageComeOut();
+	});
+	$('#main-8-link').click(function(){
+		changePage("#page8");
+		switchBg("bg6.jpg");
+		$("p").removeClass("black-text");
+		// pageComeOut();
+	});
+	//setInterval(slideShow,9000);
 
 });
 function toggleSubPage(input){
 	var target = "#"+ $(input).attr("id") + "-page"
 	if($(target).css("display") == "none"){
-		$(target).fadeToggle();
-		$(currentSubPage).fadeToggle();
+		$(target).slideToggle();
+		$(currentSubPage).slideToggle();
 		currentSubPage = target
 	}
 }
