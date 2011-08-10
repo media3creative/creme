@@ -11,9 +11,8 @@ var is_safari = ((agent.indexOf('safari') != -1));
 $(document).ready(function() {
 	document.body.style.display = 'block';
 
-	$(".content-type-1").fadeToggle();
-	$("#page1-sub1-page").fadeToggle();
-
+	$(".content-type-1").css("display","none")
+	$("#page1-sub1-page").css("display","block")
 
 	changePage("#page1")
 	$(".bg2").css("display", "none");
@@ -77,48 +76,56 @@ $(document).ready(function() {
 		changePage("#page1");
 		switchBg("bg1.jpg");
 		$("p").removeClass("black-text");
+		toggleSubPage($("#page1-sub1"));
 	});
 	
 	$('#main-2-link').click(function(){
 		changePage("#page2");
 		switchBg("bg3.jpg");
 		$("p").addClass("black-text");
+		toggleSubPage($("#page2-sub1"));
 		// pageComeOut();
 	});
 	$('#main-3-link').click(function(){
 		changePage("#page3");
 		switchBg("bg4.jpg");
 		$("p").addClass("black-text");
+		toggleSubPage($("#page3-sub1"));
 		// pageComeOut();
 	});
 	$('#main-4-link').click(function(){
 		changePage("#page4");
 		switchBg("bg5.jpg");
 		$("p").addClass("black-text");
+		toggleSubPage($("#page4-sub1"));
 		// pageComeOut();
 	});
 	$('#main-5-link').click(function(){
 		changePage("#page5");
 		switchBg("bg2.jpg");
 		$("p").removeClass("black-text");
+		toggleSubPage($("#page5-sub1"));
 		// pageComeOut();
 	});
 	$('#main-6-link').click(function(){
 		changePage("#page6");
 		switchBg("bg6.jpg");
 		$("p").addClass("black-text");
+		toggleSubPage($("#page6-sub1"));
 		// pageComeOut();
 	});
 	$('#main-7-link').click(function(){
 		changePage("#page7");
 		switchBg("bg2.jpg");
 		$("p").removeClass("black-text");
+		toggleSubPage($("#page7-sub1"));
 		// pageComeOut();
 	});
 	$('#main-8-link').click(function(){
 		changePage("#page8");
 		switchBg("bg6.jpg");
 		$("p").removeClass("black-text");
+		toggleSubPage($("#page8-sub1"));
 		// pageComeOut();
 	});
 	//setInterval(slideShow,9000);
