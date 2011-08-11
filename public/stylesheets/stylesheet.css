@@ -186,12 +186,12 @@ ul.menu a:hover {
 }
 
 .menu-hl {
-  margin-left: 0px;
+  margin-left: -20px;
   margin-top: -200px;
   z-index: -1;
   position: fixed;
   height: 140px;
-  width: 80px;
+  width: 120px;
   background: rgba(0, 0, 0, 0);
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;

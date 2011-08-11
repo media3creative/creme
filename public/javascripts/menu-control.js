@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	$(".content-type-1").css("display","none")
 	$("#page1-sub1-page").css("display","block")
+	$("#page8-sub1-page").css("display","block")
 
 	changePage("#page1")
 	$(".bg2").css("display", "none");
@@ -124,7 +125,7 @@ $(document).ready(function() {
 	$('#main-8-link').click(function(){
 		changePage("#page8");
 		switchBg("bg6.jpg");
-		$("p").removeClass("black-text");
+		$("p").addClass("black-text");
 		toggleSubPage($("#page8-sub1"));
 		// pageComeOut();
 	});
