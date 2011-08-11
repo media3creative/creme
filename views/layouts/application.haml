@@ -6,14 +6,18 @@
   %head
     %title= @title
     %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
-    %link{:href => "stylesheets/lightbox.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
     %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
-    / BEGIN FOXYCART FILES
-    %link{:charset => "utf-8", :href => "http://static.foxycart.com/scripts/colorbox/1.3.16/style1_fc/colorbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
-    %script{:charset => "utf-8", :src => "http://cdn.foxycart.com/creme/foxycart.complete.3.js", :type => "text/javascript"}
-    / END FOXYCART FILES
+    %script{:type => "text/javascript", :src => "javascripts/iscroll.js"}
+    %script{:src => "javascripts/prototype.js", :type => "text/javascript"}
+    %script{:src => "javascripts/scriptaculous.js?load=effects,builder", :type => "text/javascript"}
+    %script{:src => "javascripts/lightbox.js", :type => "text/javascript"}
+    %link{:href => "stylesheets/lightbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:type => "text/javascript"}
+
+    %style{:media => "all", :type => "text/css"}
+
 
   %body{:onorientationchange =>"ipadFunc();"}
   .bg2
@@ -89,15 +93,15 @@
           %h1 Virgin Indian Hair
           %h2 Sassy Straight
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/hairIndianStraight-big.jpg", :rel => "lightbox[product-indian]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/hairIndianStraight.jpg"}
           %h2 Wild 'n' Wavy
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/hairIndianWavy-big.jpg", :rel => "lightbox[product-indian]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/hairIndianWavy.jpg"}
           %h2 Crazy Curly
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/hairIndianCurly-big.jpg", :rel => "lightbox[product-indian]", :title => "Virgin Indian Crazy Curly"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/hairIndianCurly.jpg"}
         .content-type-1-part-2
           %br
@@ -118,7 +122,7 @@
           
           %h2 Sleek & Straight
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/hairBrazilianSleek-big.jpg", :rel => "lightbox[product-brazilian]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/hairBrazilianSleek.jpg"}
           %p Gorgeous Brazilian Hair slightly processed to achieve this fabulous sleek texture. It can be curled by using a curling iron and when Setting Lotions is applied with hair rollers of any size chosen, bouncy curls are created. When the hair is wet it turns slightly wavy.
           %ul
@@ -130,7 +134,7 @@
             
           %h2 Bodacious Bodywave
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/hairBrazilianWave-big.jpg", :rel => "lightbox[product-brazilian]", :title => "Brazilian Bodacious Bodywave"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/hairBrazilianWave.jpg"}
           %p Gorgeous Brazilian Hair, slightly processed to achieve this beautiful classic body wave texture. This hair is full of body, and has the dreamy "S" type wave that gives body and vitality to your hairstyle. You'll love how these waves look and feel. This is Brazilian hair that is steam permed to artificially create the lovely curl pattern you see. The steaming process is completely chemical free, water is used to steam the hair into shape. The texture may not be as flexible as virgin hair, meaning the hair may not revert back to a natural wavy pattern after an extended period of use. 
           %ul
@@ -262,33 +266,33 @@
           %h1 Our Stylists
           %h2 Ursilla Thomas
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/ursilla-big.jpg", :rel => "lightbox[ursilla]", :title => "Ursilla"}
               %image{:width => "300px", :height => "75px", :src => "/images/pic/ursilla/ursilla.jpg"}
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/1-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/2-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/3-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/4-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/5-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/5.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/ursilla/6-big.jpg", :rel => "lightbox[ursilla]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/ursilla/6.jpg"}  
           %br
           %h2 Christie L
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/christie/1-big.jpg", :rel => "lightbox[christie]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/christie/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/christie/2-big.jpg", :rel => "lightbox[christie]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/christie/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/christie/3-big.jpg", :rel => "lightbox[christie]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/christie/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/christie/4-big.jpg", :rel => "lightbox[christie]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/christie/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/christie/5-big.jpg", :rel => "lightbox[christie]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/christie/5.jpg"}
 
         .content-type-1-part-2
@@ -336,51 +340,51 @@
           %h1 Fall 2010
           %h2 Virgin Indian Hair Sassy Straight
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianStraight/1-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianStraight/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianStraight/2-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianStraight/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianStraight/5-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianStraight/5.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianStraight/7-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianStraight/7.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianStraight/8-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Sassy Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianStraight/8.jpg"}
           %h2 Virgin Indian Wild 'n' Wavy Hair
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianWavy/1-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianWavy/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianWavy/2-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianWavy/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianWavy/3-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianWavy/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianWavy/4-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianWavy/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/indianWavy/5-big.jpg", :rel => "lightbox[fall2010]", :title => "Virgin Indian Wild 'n' Wavy"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/indianWavy/5.jpg"}
           %h2 Brazilian Sleek & Straight Hair
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianSleek/1-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianSleek/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianSleek/2-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianSleek/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianSleek/3-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianSleek/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianSleek/4-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianSleek/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianSleek/5-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Sleek & Straight"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianSleek/5.jpg"}
-          %h2 Brazilian Bodaywave
+          %h2 Brazilian Bodywave
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianWavy/1-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Bodywave"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianWavy/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianWavy/2-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Bodywave"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianWavy/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianWavy/3-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Bodywave"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianWavy/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianWavy/4-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Bodywave"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianWavy/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/fall2010/brazilianWavy/5-big.jpg", :rel => "lightbox[fall2010]", :title => "Brazilian Bodywave"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/fall2010/brazilianWavy/5.jpg"}
         .content-type-1-part-2
           %br
@@ -464,21 +468,21 @@
           %h1 Happy Customers
           %h2 Virgin Indian Sassy Straight
           .gallery
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/1-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/1.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/2-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/2.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/3-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/3.jpg"}  
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/4-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/4.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/5-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/5.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/6-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/6.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/7-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/7.jpg"}
-            %a{:href => "#"}
+            %a{:href => "/images/pic/customer/indianStraight/8-big.jpg", :rel => "lightbox[happyCustomer]"}
               %image{:width => "75px", :height => "75px", :src => "/images/pic/customer/indianStraight/8.jpg"}
         .content-type-1-part-2
           %br
