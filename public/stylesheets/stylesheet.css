@@ -116,9 +116,9 @@ ul.menu a:hover {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  height: 20px;
-  width: 750px;
-  border-top-left-radius: 40px;
+  height: 160px;
+  width: 180px;
+  border-top-left-radius: 20px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: "Verdana";
@@ -194,7 +194,7 @@ ul.menu a:hover {
   position: fixed;
   height: 140px;
   width: 120px;
-  background: rgba(0, 0, 0, 0);
+  background-color: #ef6aa1;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
 }

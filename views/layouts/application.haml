@@ -60,20 +60,20 @@
       .page-title Home
       %ul.submenu
         %li.white#page1-sub1
-          %a{:href => "#"} About us
-        %li.yellow#page1-sub2
           %a{:href => "#"} Hair Boutique
-        %li.red#page1-sub3
+        %li.yellow#page1-sub2
+          %a{:href => "#"} Hair Salon
+        %li.red#page1-sub3{:style => "display:none;"}
           %a{:href => "#"} Hair Salon
       .content-type-1#page1-sub1-page
         .content-type-1-part-1
-          %h1 About us
+          %h1 Hair Boutique
           .gallery
             %a{:href => "/images/pic/place/1_big.jpg", :rel => "lightbox"}
-              %image{:width => "450px", :height => "100px", :src => "/images/pic/place/1.jpg"}
-          %h2 Dedicated to beauty
+              %image{:width => "450px", :height => "280px", :src => "/images/pic/place/1_big.jpg"}
+          %h2 Prepare to make your friends jealous
           %p Creme de-la Creme Hair is an upscale hair boutique that was established to offer only the very best in exotic human hair extensions to customers around the world that want and deserve the very best hair that money can buy. We import the most lustrous, pure, 100% cuticle, virgin remy hair directly from India, Brazil, Malaysia and Europe for re-sell in the United States.
-          %p Creme de la Creme Hair has gained a reputation for a superior product and when you use our hair you will immediately recognize the difference. So rest assured that when you make a purchase from Creme de la Creme Hair you are getting the best hair that money can buy. For the most elite hair on the market… Creme de la Creme Hair!
+          %p Creme de la Creme Hair has gained a reputation for a superior product and when you use our hair you will immediately recognize the difference. So rest assured that when you make a purchase from Creme de la Creme Hair you are getting the best hair that money can buy. FOR THE MOST ELITE HAIR ON THE MARKET... CREME DE LA CREME HAIR!
           %h2 Why Creme de la Creme Hair?
           %ul{:style => "color:white;"}
             %li Hair blends flawlessly with all hair types
@@ -84,14 +84,22 @@
             %li Hair curls when wet
       .content-type-1#page1-sub2-page
         .content-type-1-part-1
-          %h1 Hair Boutique
+          %h1 Hair Salon
           .gallery
             %a{:href => "/images/pic/place/2_big.jpg", :rel => "lightbox"}
-              %image{:width => "450px", :height => "100px", :src => "/images/pic/place/2.jpg"}
-          %h2 Dedicated to beauty
-          %p Creme de-la Creme Hair is an upscale hair boutique located in the Galleria Area in Houston, Texas. Our hair boutique was established to offer only the very best in exotic human hair extensions to customers around the world that want and deserve the very best hair that money can buy. We import the most lustrous, pure, 100% cuticle, virgin remy hair directly from India, Brazil, and Russia for re-sell in the United States.
-          %p Creme de-la Creme Hair customers come from all walks of life. Some are models, housewives, single moms, cancer survivors, business women, college students, singers, and actors. Additionally, our customers are of all ethnicities. We also supply hair to professional hair stylists and salons all over the country. Our clients are very satisfied with our product and services, and we are sure that you will be as well.
-          %p Our goal is to ensure that you are 100% satisfied with the excellent quality hair at unbeatable prices along with outstanding customer service. We value your business and look forward to establishing a long lasting relationship. For the most elite hair on the market……….Creme de-la Creme Hair!
+              %image{:width => "450px", :height => "280px", :src => "/images/pic/place/2_big.jpg"}
+            %p Prepare to make your friends jealous with your new traffic stopping style. Our salon combines both cutting edge and classic style for multi-textured hair.
+            %p We specialize in creating customized looks that make a statement before you do. Because diversity is breath taking we welcome all textures of hair.
+            %h2 Hair Extension Services
+            %p Do you want to give your hair a break from heat styling or maybe add a bit more luxury to your length? Let out extension specialist customize your extensions experience.
+            %h2 Hair Straightening Services
+            %p Whatever texture you want, we can create it. Straightening services are performed with the understanding that healthy, shiny, manageable hair is always the goal.
+            %h2 Lace Wigs Applications
+            %p Our stylists regularly receive advanced training and update their skills in working with all hair types and textures. If you’re ready to discover your style or take it to the next level, then call us today and schedule an appointment – 832-628-7739 (or) 832-582-7321.
+            %h2 Cutting Edge Hair Cuts
+            %p A great haircut is more than a sharp shape. Our stylists design customized precision cuts to work with your facial shape and professional image. They also work with your own hair or your hair extensions so that the two blend seamlessly.
+            %h2 Color Services
+            %p Our full service Color Bar gives our guests countless option to create their own custom color palette. Because seriously… do you want your color to look like everybody else's? market……….Creme de-la Creme Hair!
       .content-type-1#page1-sub3-page
         .content-type-1-part-1
           %h1 Are you ready to spoil your alter ego?
@@ -104,12 +112,13 @@
           %p Do you want to give your hair a break from heat styling or maybe add a bit more luxury to your length? Let out extension specialist customize your extensions experience.
           %h2 Hair Straightening Services
           %p Whatever texture you want, we can create it. Straightening services are performed with the understanding that healthy, shiny, manageable hair is always the goal.
+          %h2 Lace Wigs Applications
+          %p Our stylists regularly receive advanced training and update their skills in working with all hair types and textures. If you’re ready to discover your style or take it to the next level, then call us today and schedule an appointment – 832-628-7739 (or) 832-582-7321.
           %h2 Cutting Edge Hair Cuts
           %p A great haircut is more than a sharp shape. Our stylists design customized precision cuts to work with your facial shape and professional image. They also work with your own hair or your hair extensions so that the two blend seamlessly.
           %h2 Color Services
           %p Our full service Color Bar gives our guests countless option to create their own custom color palette. Because seriously… do you want your color to look like everybody else's?
-          %h2 Lace Wigs Applications
-          %p Our stylists regularly receive advanced training and update their skills in working with all hair types and textures. If you’re ready to discover your style or take it to the next level, then call us today and schedule an appointment – 832-628-7739 (or) 832-582-7321.
+          
 
   .content-container#page2
     .content-bg{:style => "background-color: #FFFFFF;width: 800px;"}
@@ -157,6 +166,13 @@
               %option{:value => "14"} 14 ''
               %option{:value => "16"} 16 ''
             %input.submit{:name => "Add product", :type => "submit", :value => "Add to Cart"}/
+          .gallery
+            %a{:href => "/images/pic/spring2011/indianStraight/1-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Straight"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianStraight/1.jpg"}
+            %a{:href => "/images/pic/spring2011/indianStraight/2-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Straight"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianStraight/2.jpg"}
+            %a{:href => "/images/pic/spring2011/indianStraight/5-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Straight"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianStraight/5.jpg"}
           %br
           %h1 Wild 'n' Wavy
           .gallery
@@ -180,8 +196,13 @@
               %option{:value => "14"} 14 ''
               %option{:value => "16"} 16 ''
             %input.submit{:name => "Add product", :type => "submit", :value => "Add to Cart"}/
-          %br
-          %br
+          .gallery
+            %a{:href => "/images/pic/spring2011/indianWavy/1-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Wild'n Wavy"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianWavy/1.jpg"}
+            %a{:href => "/images/pic/spring2011/indianWavy/2-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Wild'n Wavy"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianWavy/2.jpg"}
+            %a{:href => "/images/pic/spring2011/indianWavy/3-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Wild'n Wavy"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianWavy/3.jpg"}
           %h1 Crazy Curly
           .gallery
             %a{:href => "/images/pic/hairIndianCurly-big.jpg", :rel => "lightbox[product-indian]", :title => "Virgin Indian Wild 'n' Wavy"}
@@ -204,8 +225,13 @@
               %option{:value => "14"} 14 ''
               %option{:value => "16"} 16 ''
             %input.submit{:name => "Add product", :type => "submit", :value => "Add to Cart"}/
-          %br
-          %br
+          .gallery
+            %a{:href => "/images/pic/spring2011/indianCurly/1-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Crazy Curly"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianCurly/1.jpg"}
+            %a{:href => "/images/pic/spring2011/indianCurly/2-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Crazy Curly"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianCurly/2.jpg"}
+            %a{:href => "/images/pic/spring2011/indianCurly/3-big.jpg", :rel => "lightbox[spring2011]", :title => "Virgin Indian Crazy Curly"}
+              %image{:width => "75px", :height => "75px", :src => "/images/pic/spring2011/indianCurly/3.jpg"}
         .content-type-1-part-2
 
       .content-type-1#page2-sub2-page
@@ -715,7 +741,20 @@
             %b pink 
             | $1800
   .upper-footer
-    All contents &copy; copyright 2010 - 2011  Creme da Creme. All rights reserved     |    Terms & conditions    |    Privacy policy    |    Terms of use     
+    All contents &copy; copyright 2010 - 2011  Creme da Creme. 
+    %br
+    %br
+    CONNECT WITH US
+    %br
+    %br
+    %a{:href => "http://www.facebook.com/", :target => "_blank"}
+      %img{:height => "30", :src => "/images/facebook_logo.png", :width => "30", :border => "0", :class => "icon"}
+    %a{:href => "http://www.twitter.com", :target => "_blank"}
+      %img{:height => "30", :src => "/images/twitter_logo.png", :width => "30", :border => "0", :class => "icon"}
+    %br
+    %br
+    %span{:style => "font-size: 16px;"} 
+      832-582-7321
   //footer
   // .footer-right
   //   %form#form1{:action => "", :method => "post", :name => "form1"}
