@@ -181,7 +181,7 @@ ul.menu a:hover {
   position: fixed;
   top: -100px;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
   filter: alpha(opacity=30);
   width: 600px;
   height: 120%;
@@ -191,7 +191,7 @@ ul.menu a:hover {
   margin-left: -20px;
   margin-top: -200px;
   z-index: -1;
-  position: fixed;
+  position: absolute;
   height: 140px;
   width: 120px;
   background-color: #ef6aa1;
@@ -349,4 +349,13 @@ h2 {
   font-size: 13px;
   font-style: oblique;
   color: #ef6aa1;
+}
+
+.contact-form {
+  overflow: hidden;
+}
+.contact-form iframe {
+  position: relative;
+  top: -30px;
+  margin-top: -30px;
 }

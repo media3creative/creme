@@ -45,6 +45,7 @@
 //
 //  Configurationl
 //
+
 LightboxOptions = Object.extend({
     fileLoadingImage:        'images/loading.gif',     
     fileBottomNavCloseImage: 'images/closelabel.gif',

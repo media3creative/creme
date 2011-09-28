@@ -111,14 +111,14 @@ jQuery(document).ready(function() {
 	});
 	jQuery('#main-6-link').click(function(){
 		changePage("#page6");
-		switchBg("bg6.jpg");
+		switchBg("bg7.jpg");
 		jQuery("p").addClass("black-text");
 		toggleSubPage(jQuery("#page6-sub1"));
 		// pageComeOut();
 	});
 	jQuery('#main-7-link').click(function(){
 		changePage("#page7");
-		switchBg("bg2.jpg");
+		switchBg("bg7.jpg");
 		jQuery("p").removeClass("black-text");
 		toggleSubPage(jQuery("#page7-sub1"));
 		// pageComeOut();
